@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.s1_1 {
+  position: absolute;
+  width: 1366px;
+  height: 1024px;
+  z-index: 1;
+}
+
+.s1_2 {
+  position: absolute;
+  left: 240px;
+  top: 46px;
+  width: 887px;
+  height: 131px;
+  animation: fadeInLeft 0.7s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 3;
+}
+
+.s1_3 {
+  position: absolute;
+  left: 514px;
+  top: 119px;
+  width: 629px;
+  height: 144px;
+  animation: stampIn 0.3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s1_4 {
+  position: absolute;
+  left: 891px;
+  top: 290px;
+  width: 244px;
+  height: 241px;
+  animation: fadeInRightOut 3.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+@-webkit-keyframes fadeInRightOut {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  40% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRightOut {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  40% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInRightOut {
+  -webkit-animation-name: fadeInRightOut;
+  animation-name: fadeInRightOut;
+}
+
+
+@-webkit-keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.stampIn {
+  -webkit-animation-name: stampIn;
+  animation-name: stampIn;
+}
