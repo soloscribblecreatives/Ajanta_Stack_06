@@ -34,13 +34,25 @@
   z-index: 2;
 }
 
-.s1_4 {
+/* .s1_4 {
   position: absolute;
   left: 891px;
   top: 290px;
   width: 244px;
   height: 241px;
   animation: fadeInRightOut 3.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+} */
+
+.s1_4 {
+  position: absolute;
+  left: 891px;
+  top: 290px;
+  width: 244px;
+  height: 241px;
+  animation: fadeOut 3.5s;
   animation-delay: 2.5s;
   animation-fill-mode: both;
   z-index: 2;

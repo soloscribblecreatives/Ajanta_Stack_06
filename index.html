@@ -87,10 +87,10 @@
             canvas: true,
             round: false,
             maxAngle: 360,
-            gravity: 5,
-            groundDistance: 270,
+            gravity: 3,
+            groundDistance: 2000,
         });
-		}, 4000)
+		}, 2000)
 		}
 		explode();
 		break;
@@ -155,7 +155,7 @@ function explode() {
             gravity: 3,				//speed of falling particles - low value slower speed
             groundDistance: 2000,	//distance of falling particles - higher value further fall
         });
-    }, 4000)
+    }, 2000) //4000 for fadeInRightOut
 }
 explode();
 }
