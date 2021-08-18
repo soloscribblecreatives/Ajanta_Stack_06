@@ -99,6 +99,18 @@
   z-index: 5;
 }
 
+.s11_9 {
+  position: absolute;
+  left: 387px;
+  top: 368px;
+  width: 331px;
+  height: 46px;
+  animation: fadeInUp 1s;
+  animation-delay: 3.3s;
+  animation-fill-mode: both;
+  z-index: 5;
+}
+
 
 @-webkit-keyframes slideInRightBig {
   from {
