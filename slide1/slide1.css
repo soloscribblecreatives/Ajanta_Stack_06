@@ -12,51 +12,113 @@
 
 .s1_2 {
   position: absolute;
-  left: 240px;
-  top: 46px;
-  width: 887px;
-  height: 131px;
-  animation: fadeInLeft 0.7s;
+  left: 279px;
+  top: -20px;
+  width: 808px;
+  height: 809px;
+  animation: flashInLoop 2s infinite;
+  animation-delay: 2.3s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s1_3 {
+  position: absolute;
+  left: 570px;
+  top: 38px;
+  width: 226px;
+  height: 422px;
+  animation: fadeIn 0.7s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
   z-index: 3;
 }
 
-.s1_3 {
+.s1_4 {
   position: absolute;
-  left: 514px;
-  top: 119px;
-  width: 629px;
-  height: 144px;
-  animation: stampIn 0.3s;
+  left: 570px;
+  top: 38px;
+  width: 226px;
+  height: 422px;
+  animation: fadeIn 0.2s;
+  animation-delay: 2.3s;
+  animation-fill-mode: both;
+  z-index: 4;
+}
+
+.s1_5 {
+  position: absolute;
+  left: 141px;
+  top: 93px;
+  width: 374px;
+  height: 57px;
+  animation: fadeInLeft 0.7s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s1_6 {
+  position: absolute;
+  left: 141px;
+  top: 169px;
+  width: 327px;
+  height: 132px;
+  animation: fadeInLeft 0.7s;
   animation-delay: 1.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
 
-/* .s1_4 {
+.s1_7 {
   position: absolute;
-  left: 891px;
-  top: 290px;
-  width: 244px;
-  height: 241px;
-  animation: fadeInRightOut 3.5s;
-  animation-delay: 2.5s;
-  animation-fill-mode: both;
-  z-index: 2;
-} */
-
-.s1_4 {
-  position: absolute;
-  left: 891px;
-  top: 290px;
-  width: 244px;
-  height: 241px;
-  animation: fadeOut 3.5s;
-  animation-delay: 2.5s;
+  left: 338px;
+  top: 548px;
+  width: 690px;
+  height: 89px;
+  animation: fadeInUp 0.7s;
+  animation-delay: 3.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
+
+.s1_8 {
+  position: absolute;
+  left: 714px;
+  top: 596px;
+  width: 34px;
+  height: 41px;
+  animation: tada 2s infinite;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+  opacity: 0;
+  z-index: 2;
+}
+
+.s1_9 {
+  position: absolute;
+  left: 69px;
+  top: 711px;
+  width: 1228px;
+  height: 97px;
+  animation: fadeInDown 0.7s;
+  animation-delay: 5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s1_10 {
+  position: absolute;
+  left: 861px;
+  top: 885px;
+  width: 324px;
+  height: 42px;
+  animation: lightSpeedInLeft 0.7s;
+  animation-delay: 7s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
 
 @-webkit-keyframes fadeInRightOut {
   from {
@@ -135,4 +197,135 @@
 .stampIn {
   -webkit-animation-name: stampIn;
   animation-name: stampIn;
+}
+
+@-webkit-keyframes flashInLoop {
+  from,
+  50%,
+  to {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+@keyframes flashInLoop {
+  from,
+  50%,
+  to {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+.animate__flashInLoop {
+  -webkit-animation-name: flashInLoop;
+  animation-name: flashInLoop;
+}
+
+@-webkit-keyframes rotateInLoop {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+@keyframes rotateInLoop {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.rotateInLoop {
+  -webkit-animation-name: rotateInLoop;
+  animation-name: rotateInLoop;
+}
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+	opacity: 1;
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	opacity: 1;
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	opacity: 1;
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	opacity: 1;
+  }
+}
+@keyframes tada {
+  from {
+	-webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+	opacity: 1;
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	opacity: 1;
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	opacity: 1;
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	opacity: 1;
+  }
+}
+.animate__tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
 }

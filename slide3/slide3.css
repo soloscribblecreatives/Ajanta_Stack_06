@@ -53,6 +53,7 @@
   width: 846px;
   height: 76px;
   animation: revealHorizontal 1s;
+  clip: rect(0px,0px,100px,0px);
   animation-delay: 3s;
   animation-fill-mode: both;
   z-index: 2;
@@ -77,6 +78,7 @@
   width: 108px;
   height: 53px;
   animation: revealHorizontalSmall 2s;
+  clip: rect(0px,0px,100px,0px);
   animation-delay: 5s;
   animation-fill-mode: both;
   z-index: 2;
