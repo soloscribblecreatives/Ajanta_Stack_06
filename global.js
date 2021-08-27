@@ -179,7 +179,7 @@ function toCaptureTime(page_id){
 		var nextSlideNo = currentSlideNo + 1 ;	
 	} 
 
-	if(nextSlideNo <= 7){ //Total slides present
+	if(nextSlideNo <= 13){ //Total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -281,10 +281,10 @@ else {
 	//custom slide changes ends here....
 
 	else {
-		if(page_id <= 7){
+		if(page_id <= 13){
 			page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 8){
+		if(page_id == 14){
 			flag=1;
 		}
 	}
@@ -383,6 +383,24 @@ function set_pg_content(pg_id){
 		case 7:
 		content='<link rel="stylesheet" type="text/css" href="slide7/slide7.css" media="screen"/><div class="s7_1"><img src="slide7/s7_1.png" width="1366" height="1024" alt=""/></div><div class="s7_2"><img src="slide7/s7_2.png"/></div><div class="s7_3"><img src="slide7/s7_3.png"/></div><div class="s7_4"><img src="slide7/s7_4.png"/></div><div class="s7_5"><img src="slide7/s7_5.png"/></div><div class="s7_6"><img src="slide7/s7_6.png"/></div><div class="s7_7"><img id="s7_7" src="slide7/s7_7.png"/></div><div class="s7_8"><img id="s7_8" src="slide7/s7_8.png"/></div><div class="s7_9"><img id="s7_9" src="slide7/s7_9.png"/></div><div class="s7_10"><img id="s7_10" src="slide7/s7_10.png"/></div><div class="s7_11"><img id="s7_11" src="slide7/s7_11.png"/></div>';
 		break;
+		case 8:
+		content='<link rel="stylesheet" type="text/css" href="slide8/slide8.css" media="screen"/><div class="s8_1"><img src="slide8/s8_1.png" width="1366" height="1024" alt=""/></div><div class="s8_2"><img src="slide8/s8_2.png"/></div><div class="s8_3"><img src="slide8/s8_3.png"/></div><div class="s8_4"><img src="slide8/s8_4.png"/></div><div class="s8_5"><img src="slide8/s8_5.png"/></div><div class="s8_6"><img src="slide8/s8_6.png"/></div><div class="s8_7"><img src="slide8/s8_7.png"/></div><div class="s8_8"><img src="slide8/s8_8.png"/></div><div class="s8_9"><img src="slide8/s8_9.png"/></div>';
+		break;
+		case 9:
+		content='<link rel="stylesheet" type="text/css" href="slide9/slide9.css" media="screen"/><div class="s9_1"><img src="slide9/s9_1.png" width="1366" height="1024" alt=""/></div><div class="s9_2"><img src="slide9/s9_2.png"/></div>';
+		break;
+		case 10:
+		content='<link rel="stylesheet" type="text/css" href="slide10/slide10.css" media="screen"/><div class="s10_1"><img src="slide10/s10_1.png" width="1366" height="1024" alt=""/></div><div class="s10_2"><img src="slide10/s10_2.png"/></div><div class="s10_3"><img src="slide10/s10_3.png"/></div><div class="s10_4"><img src="slide10/s10_4.png"/></div>';
+		break;
+		case 11:
+		content='<link rel="stylesheet" type="text/css" href="slide11/slide11.css" media="screen"/><div class="s11_1"><img src="slide11/s11_1.png" width="1366" height="1024" alt=""/></div>';
+		break;
+		case 12:
+		content='<link rel="stylesheet" type="text/css" href="slide12/slide12.css" media="screen"/><div class="s12_1"><img src="slide12/s12_1.png" width="1366" height="1024" alt=""/></div>';
+		break;
+		case 13:
+		content='<link rel="stylesheet" type="text/css" href="slide13/slide13.css" media="screen"/><div class="s13_1"><img src="slide13/s13_1.png" width="1366" height="1024" alt=""/></div>';
+		break;
 	}
 
 	return content;
@@ -466,14 +484,17 @@ function checkClickThrough(){
 	if(currentslide == 6){
 		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:200px; height:150px;" value="OK" onclick="checkBtns(8)"></button>';
 	}
-	if(currentslide == 7){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:150px; height:150px;" value="OK" onclick="checkBtns(9)"></button>';
+	if(currentslide == 10){
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:375px; top:630px; z-index:105; width:100px; height:100px;" value="OK" onclick="checkBtns(9)"></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:728px; top:670px; z-index:105; width:100px; height:100px;" value="OK" onclick="checkBtns(10)"></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:1074px; top:620px; z-index:105; width:100px; height:100px;" value="OK" onclick="checkBtns(11)"></button>';
 	}
-	if(currentslide == 8){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:150px; height:150px;" value="OK" onclick="checkBtns(10)"></button>';
+	if(currentslide == 11){
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:200px; height:150px;" value="OK" onclick="checkBtns(12)"></button>';
 	}
-	if(currentslide == 9){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:150px; height:150px;" value="OK" onclick="checkBtns(11)"></button>';
+	if(currentslide == 12){
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:150px; height:150px;" value="OK" onclick="checkBtns(13)"></button>';
+	}
+	if(currentslide == 13){
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:150px; height:150px;" value="OK" onclick="checkBtns(14)"></button>';
 	}
 }
 
@@ -504,13 +525,22 @@ function checkBtns(refNum){
 		open_page('',2);
 		break;
 		case 9:
-		open_page('',2);
+		open_page('',12);
 		break;
 		case 10:
-		open_page('',2);
+		open_page('',13);
 		break;
 		case 11:
-		open_page('',2);
+		open_page('',11);
+		break;
+		case 12:
+		open_page('',10);
+		break;
+		case 13:
+		open_page('',10);
+		break;
+		case 14:
+		open_page('',10);
 		break;
 	}
 }
