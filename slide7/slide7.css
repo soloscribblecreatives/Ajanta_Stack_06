@@ -29,8 +29,8 @@
   top: 176px;
   width: 755px;
   height: 123px;
-  animation: fadeInUp 0.7s;
-  animation-delay: 1s;
+  animation: fadeInUp 1s;
+  animation-delay: 1.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -42,7 +42,19 @@
   width: 76px;
   height: 74px;
   animation: rotateInLoopRev 2s linear;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s7_4_1 {
+  position: absolute;
+  left: 486px;
+  top: 208px;
+  width: 344px;
+  height: 83px;
+  animation: flipInXFlash 1.5s;
+  animation-delay: 3.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -55,19 +67,19 @@
   height: 44px;
   animation: revealHorizontal 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-fill-mode: both;
   z-index: 3;
 }
 
 .s7_6 {
   position: absolute;
-  left: 720px;
+  left: 790px;
   top: 493px;
-  width: 475px;
-  height: 419px;
+  width: 293px;
+  height: 196px;
   animation: fadeInRight 1s;
-  animation-delay: 4s;
+  animation-delay: 6s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -78,8 +90,8 @@
   top: 587px;
   width: 84px;
   height: 98px;
-  animation: bounceInDown 1s;
-  animation-delay: 4.5s;
+  animation: tada 1s;
+  animation-delay: 7s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -90,8 +102,8 @@
   top: 518px;
   width: 660px;
   height: 31px;
-  animation: fadeInUp 1s;
-  animation-delay: 6s;
+  animation: fadeInUp 0.7s;
+  animation-delay: 8.5s;
   animation-fill-mode: both;
   opacity: 0;
   z-index: 2;
@@ -103,9 +115,9 @@
   top: 590px;
   width: 432px;
   height: 65px;
-  animation: revealHorizontal 1s;
+  animation: revealHorizontalSmall 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 7s;
+  animation-delay: 9.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -116,9 +128,9 @@
   top: 694px;
   width: 432px;
   height: 65px;
-  animation: revealHorizontal 1s;
+  animation: revealHorizontalSmall 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 7.5s;
+  animation-delay: 10.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -129,9 +141,21 @@
   top: 798px;
   width: 432px;
   height: 65px;
-  animation: revealHorizontal 1s;
+  animation: revealHorizontalSmall 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 8s;
+  animation-delay: 11.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s7_12 {
+  position: absolute;
+  left: 720px;
+  top: 715px;
+  width: 475px;
+  height: 197px;
+  animation: zoomIn 1s;
+  animation-delay: 12.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -542,8 +566,8 @@
 
   10%,
   20% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -3deg);
 	opacity: 1;
   }
 
@@ -551,16 +575,16 @@
   50%,
   70%,
   90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, 3deg);
 	opacity: 1;
   }
 
   40%,
   60%,
   80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -3deg);
 	opacity: 1;
   }
 
@@ -579,8 +603,8 @@
 
   10%,
   20% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -3deg);
 	opacity: 1;
   }
 
@@ -588,16 +612,16 @@
   50%,
   70%,
   90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, 3deg);
 	opacity: 1;
   }
 
   40%,
   60%,
   80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -3deg);
 	opacity: 1;
   }
 
@@ -620,7 +644,7 @@
   }
   
   100% {
-    clip: rect(0px,900px,100px,0px);
+    clip: rect(0px,800px,100px,0px);
 	opacity: 1;
   }
 }
@@ -631,7 +655,7 @@
   }
   
   100% {
-    clip: rect(0px,900px,100px,0px);
+    clip: rect(0px,800px,100px,0px);
 	opacity: 1;
   }
 }
@@ -648,7 +672,7 @@
   }
   
   100% {
-    clip: rect(0px,400px,100px,0px);
+    clip: rect(0px,450px,100px,0px);
 	opacity: 1;
   }
 }
@@ -659,7 +683,7 @@
   }
   
   100% {
-    clip: rect(0px,400px,100px,0px);
+    clip: rect(0px,450px,100px,0px);
 	opacity: 1;
   }
 }
