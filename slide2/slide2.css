@@ -71,6 +71,17 @@
   z-index: 2;
 }
 
+.s2_6 {
+  position: absolute;
+  left: 802px;
+  top: 99px;
+  width: 345px;
+  height: 326px;
+  z-index: 1;
+}
+
+/*<div class="s2_6_1_1"><div class="s2_6_1"><img src="slide2/s2_6_1.svg"/></div></div><div class="s2_6_2_1"><div class="s2_6_2"><img src="slide2/s2_6_2.svg"/></div>*/
+
 .s2_6_1_1 {
   position: absolute;
   left: 896px;
