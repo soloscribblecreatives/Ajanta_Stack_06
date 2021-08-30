@@ -10,14 +10,24 @@
   z-index: 1;
 }
 
+.s2_1_1 {
+  position: absolute;
+  left: 0px;
+  top: 846px;
+  width: 1366px;
+  height: 178px;
+  z-index: 10;
+}
+
+
 .s2_2 {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 443px;
   height: 443px;
-  animation: flashInLoop 2s;
-  animation-delay: 0.5s;
+  animation: flashInLoop 1s 2;
+  animation-delay: 1s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -40,8 +50,8 @@
   top: 38px;
   width: 139px;
   height: 233px;
-  animation: flashInLoop 1.4s 2;
-  animation-delay: 0.5s;
+  animation: flashInLoop 1s 2;
+  animation-delay: 1s;
   animation-fill-mode: both;
   z-index: 4;
 }
@@ -73,10 +83,13 @@
 
 .s2_6 {
   position: absolute;
-  left: 802px;
-  top: 99px;
-  width: 345px;
-  height: 326px;
+  left: 896px;
+  top: 195px;
+  width: 133px;
+  height: 130px;
+  animation: fadeInUp 1s;
+  animation-delay: 3.5s;
+  animation-fill-mode: both;
   z-index: 1;
 }
 
@@ -424,25 +437,21 @@
 
 @-webkit-keyframes flashInLoop {
   from,
-  50%,
   to {
     opacity: 0;
   }
 
-  25%,
-  75% {
+  50% {
     opacity: 1;
   }
 }
 @keyframes flashInLoop {
   from,
-  50%,
   to {
     opacity: 0;
   }
 
-  25%,
-  75% {
+  50% {
     opacity: 1;
   }
 }

@@ -16,7 +16,7 @@
   top: -20px;
   width: 808px;
   height: 809px;
-  animation: flashInLoop 2s;
+  animation: flashInLoop 1s 2;
   animation-delay: 1.5s;
   animation-fill-mode: both;
   z-index: 2;
@@ -52,7 +52,7 @@
   top: 38px;
   width: 226px;
   height: 422px;
-  animation: flashInLoop 1.4s 2;
+  animation: flashInLoop 1s 2;
   animation-delay: 1.5s;
   animation-fill-mode: both;
   z-index: 5;
@@ -65,7 +65,7 @@
   width: 374px;
   height: 57px;
   animation: fadeInLeft 0.7s;
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -76,8 +76,8 @@
   top: 169px;
   width: 327px;
   height: 132px;
-  animation: fadeInLeft 1s;
-  animation-delay: 3.5s;
+  animation: fadeInLeft 0.7s;
+  animation-delay: 2.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -89,7 +89,7 @@
   width: 690px;
   height: 89px;
   animation: fadeInUp 1s;
-  animation-delay: 5s;
+  animation-delay: 4s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -101,7 +101,7 @@
   width: 34px;
   height: 41px;
   animation: tada 1.5s;
-  animation-delay: 6.5s;
+  animation-delay: 5s;
   animation-fill-mode: both;
   opacity: 0;
   z-index: 2;
@@ -114,7 +114,7 @@
   width: 1228px;
   height: 97px;
   animation: fadeInDown 1s;
-  animation-delay: 9s;
+  animation-delay: 6.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -126,7 +126,7 @@
   width: 324px;
   height: 42px;
   animation: lightSpeedInLeft 1s;
-  animation-delay: 10.5s;
+  animation-delay: 8s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -213,25 +213,21 @@
 
 @-webkit-keyframes flashInLoop {
   from,
-  50%,
   to {
     opacity: 0;
   }
 
-  25%,
-  75% {
+  50% {
     opacity: 1;
   }
 }
 @keyframes flashInLoop {
   from,
-  50%,
   to {
     opacity: 0;
   }
 
-  25%,
-  75% {
+  50% {
     opacity: 1;
   }
 }

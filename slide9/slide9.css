@@ -29,7 +29,7 @@
   top: 402px;
   width: 577px;
   height: 48px;
-  animation: flipInXFlash 1.5s;
+  animation: fadeInUp 1.5s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
   z-index: 2;
@@ -41,8 +41,7 @@
   top: 579px;
   width: 433px;
   height: 112px;
-  animation: revealHorizontalSmall 1s;
-  clip: rect(0px,0px,100px,0px);
+  animation: pulse 1s;
   animation-delay: 2.5s;
   animation-fill-mode: both;
   z-index: 2;
@@ -54,8 +53,7 @@
   top: 752px;
   width: 433px;
   height: 114px;
-  animation: revealHorizontalSmall 1s;
-  clip: rect(0px,0px,100px,0px);
+  animation: pulse 1s;
   animation-delay: 3.5s;
   animation-fill-mode: both;
   z-index: 3;
@@ -67,7 +65,7 @@
   top: 820px;
   width: 121px;
   height: 135px;
-  animation: tada 1s;
+  animation: tada 1.5s;
   animation-delay: 5s;
   animation-fill-mode: both;
   z-index: 2;
@@ -80,7 +78,7 @@
   width: 144px;
   height: 144px;
   animation: zoomIn 1s;
-  animation-delay: 6s;
+  animation-delay: 5s;
   animation-fill-mode: both;
   z-index: 2;
 }

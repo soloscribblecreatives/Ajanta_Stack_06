@@ -41,8 +41,8 @@
   top: 186px;
   width: 76px;
   height: 74px;
-  animation: rotateInLoopRev 2s linear;
-  animation-delay: 2.5s;
+  animation: fadeInUp 1s;
+  animation-delay: 1.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -53,8 +53,8 @@
   top: 208px;
   width: 344px;
   height: 83px;
-  animation: flipInXFlash 1.5s;
-  animation-delay: 3.5s;
+  animation: zoomIn 1s;
+  animation-delay: 2.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -67,7 +67,7 @@
   height: 44px;
   animation: revealHorizontal 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 5s;
+  animation-delay: 4s;
   animation-fill-mode: both;
   z-index: 3;
 }
@@ -79,7 +79,7 @@
   width: 293px;
   height: 196px;
   animation: fadeInRight 1s;
-  animation-delay: 6s;
+  animation-delay: 2.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -90,8 +90,8 @@
   top: 587px;
   width: 84px;
   height: 98px;
-  animation: tada 1s;
-  animation-delay: 7s;
+  animation: tada 1.5s;
+  animation-delay: 10.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -103,7 +103,7 @@
   width: 660px;
   height: 31px;
   animation: fadeInUp 0.7s;
-  animation-delay: 8.5s;
+  animation-delay: 5s;
   animation-fill-mode: both;
   opacity: 0;
   z-index: 2;
@@ -117,7 +117,7 @@
   height: 65px;
   animation: revealHorizontalSmall 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 9.5s;
+  animation-delay: 6s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -130,7 +130,7 @@
   height: 65px;
   animation: revealHorizontalSmall 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 10.5s;
+  animation-delay: 7s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -143,7 +143,7 @@
   height: 65px;
   animation: revealHorizontalSmall 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 11.5s;
+  animation-delay: 8s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -155,7 +155,7 @@
   width: 475px;
   height: 197px;
   animation: zoomIn 1s;
-  animation-delay: 12.5s;
+  animation-delay: 9s;
   animation-fill-mode: both;
   z-index: 2;
 }
