@@ -366,7 +366,7 @@ function set_pg_content(pg_id){
 		content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1366" height="1024" alt=""/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_4"><img id="s1_4" src="slide1/s1_4.png"/></div><div class="s1_4_1"><img src="slide1/s1_4_1.png"/></div><div class="s1_5"><img id="s1_5" src="slide1/s1_5.png"/></div><div class="s1_6"><img id="s1_6" src="slide1/s1_6.png"/></div><div class="s1_7"><img id="s1_7" src="slide1/s1_7.png"/></div><div class="s1_8"><img id="s1_8" src="slide1/s1_8.png"/></div><div class="s1_9"><img id="s1_9" src="slide1/s1_9.png"/></div><div class="s1_10"><img id="s1_10" src="slide1/s1_10.png"/></div>';
 		break;
 		case 2:
-		content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1366" height="1024" alt=""/></div><div class="s2_1_1"><img src="slide2/s2_1_1.png"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_3"><img src="slide2/s2_3.png"/></div><div class="s2_3_1"><img src="slide2/s2_3_1.png"/></div><div class="s2_4"><img src="slide2/s2_4.png"/></div><div class="s2_5"><img src="slide2/s2_5.png"/></div><div class="s2_6"><img src="slide2/s2_6.png"/></div><div class="s2_7"><img id="s2_7" src="slide2/s2_7.png"/></div><div class="s2_8"><img id="s2_8" src="slide2/s2_8.png"/></div><div class="s2_9"><img id="s2_9" src="slide2/s2_9.png"/></div><div class="s2_10"><img id="s2_10" src="slide2/s2_10.png"/></div><div class="s2_11"><img id="s2_11" src="slide2/s2_11.png"/></div><div class="s2_12"><img id="s2_12" src="slide2/s2_12.png"/></div><div class="s2_13"><img id="s2_13" src="slide2/s2_13.png"/></div><div class="s2_14"><img id="s2_14" src="slide2/s2_14.png"/></div>';
+		content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1366" height="1024" alt=""/></div><div class="s2_1_1"><img src="slide2/s2_1_1.png"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_3"><img src="slide2/s2_3.png"/></div><div class="s2_3_1"><img src="slide2/s2_3_1.png"/></div><div class="s2_4"><img src="slide2/s2_4.png"/></div><div class="s2_5"><img src="slide2/s2_5.png"/></div><div class="s2_6"><img src="slide2/s2_6.png"/></div><div class="s2_7"><img id="s2_7" src="slide2/s2_7.png"/></div><div class="s2_8"><img id="s2_8" src="slide2/s2_8.png"/></div><div class="s2_9"><img id="s2_9" src="slide2/s2_9.png"/></div><div class="s2_10"><img id="s2_10" src="slide2/s2_10.png"/></div><div class="s2_11"><img id="s2_11" src="slide2/s2_11.png"/></div><div class="s2_12"><img id="s2_12" src="slide2/s2_12.png"/></div><div class="s2_13"><img id="s2_13" src="slide2/s2_13.png"/></div><div class="s2_14"><img id="s2_14" src="slide2/s2_14.png"/></div><div class="pop_up"><img src="slide2/s3_1.png" width="1366" height="1024" alt=""></div><div class="pop1" onclick="pop1()"></div><div class="c1ose1" onclick="close1()"></div>';
 		break;
 		case 3:
 		content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png" width="1366" height="1024" alt=""/></div>';
@@ -470,7 +470,7 @@ function checkClickThrough(){
 		document.getElementById("click_through").innerHTML='';
 	}
 	if(currentslide == 2){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:695px; top:405px; z-index:105; width:253px; height:235px;" value="OK" onclick="checkBtns(1)"></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:977px; top:405px; z-index:105; width:253px; height:235px;" value="OK" onclick="checkBtns(2)"></button><button name="button" style="opacity: 0.0;position:absolute; left:695px; top:702px; z-index:105; width:253px; height:235px;" value="OK" onclick="checkBtns(3)"></button><button name="button" style="opacity: 0.0;position:absolute; left:977px; top:702px; z-index:105; width:253px; height:235px;" value="OK" onclick="checkBtns(4)"></button>';
+		document.getElementById("click_through").innerHTML='';
 	}
 	if(currentslide == 3){
 		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:200px; height:150px;" value="OK" onclick="checkBtns(5)"></button>';
@@ -607,16 +607,16 @@ $('.touchbtn').css("display","block");
 
 /*--------------------- animation javascript -----------------------*/
 
-function s4_pop1() {
-	$('.s4_5').css("display","block");
-	$('.s4_c1ose1').css("display","block");
-	$('.s4_pop1').css("display","none");
+function pop1() {
+	$('.pop_up').css("display","block");
+	$('.pop1').css("display","none");
+	$('.c1ose1').css("display","block");
 }
 
-function s4_close1() {
-	$('.s4_5').css("display","none");
-	$('.s4_c1ose1').css("display","none");
-	$('.s4_pop1').css("display","block");
+function close1() {
+	$('.pop_up').css("display","none");
+	$('.pop1').css("display","block");
+	$('.c1ose1').css("display","none");
 }
 
 /*---------------------Particlize-----------------------*/
