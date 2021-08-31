@@ -29,7 +29,7 @@
   top: 176px;
   width: 755px;
   height: 123px;
-  animation: fadeInUp 1s;
+  animation: fadeInUp 0.8s;
   animation-delay: 1.5s;
   animation-fill-mode: both;
   z-index: 2;
@@ -41,7 +41,7 @@
   top: 186px;
   width: 76px;
   height: 74px;
-  animation: fadeInUp 1s;
+  animation: fadeInUp 0.8s;
   animation-delay: 1.5s;
   animation-fill-mode: both;
   z-index: 2;
@@ -54,7 +54,7 @@
   width: 344px;
   height: 83px;
   animation: zoomIn 1s;
-  animation-delay: 2.5s;
+  animation-delay: 3s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -67,19 +67,19 @@
   height: 44px;
   animation: revealHorizontal 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 4s;
+  animation-delay: 4.5s;
   animation-fill-mode: both;
   z-index: 3;
 }
 
 .s7_6 {
   position: absolute;
-  left: 790px;
-  top: 493px;
-  width: 293px;
-  height: 196px;
+  left: 771px;
+  top: 435px;
+  width: 312px;
+  height: 254px;
   animation: fadeInRight 1s;
-  animation-delay: 2.5s;
+  animation-delay: 3s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -91,7 +91,7 @@
   width: 84px;
   height: 98px;
   animation: tada 1.5s;
-  animation-delay: 10.5s;
+  animation-delay: 11.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -103,7 +103,7 @@
   width: 660px;
   height: 31px;
   animation: fadeInUp 0.7s;
-  animation-delay: 5s;
+  animation-delay: 5.5s;
   animation-fill-mode: both;
   opacity: 0;
   z-index: 2;
@@ -117,7 +117,7 @@
   height: 65px;
   animation: revealHorizontalSmall 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 6s;
+  animation-delay: 6.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -130,7 +130,7 @@
   height: 65px;
   animation: revealHorizontalSmall 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 7s;
+  animation-delay: 7.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -143,7 +143,7 @@
   height: 65px;
   animation: revealHorizontalSmall 1s;
   clip: rect(0px,0px,100px,0px);
-  animation-delay: 8s;
+  animation-delay: 8.5s;
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -153,9 +153,9 @@
   left: 720px;
   top: 715px;
   width: 475px;
-  height: 197px;
+  height: 230px;
   animation: zoomIn 1s;
-  animation-delay: 9s;
+  animation-delay: 10s;
   animation-fill-mode: both;
   z-index: 2;
 }
