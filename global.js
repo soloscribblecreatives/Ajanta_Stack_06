@@ -250,11 +250,18 @@ else
 	else{
 		if(page_id >= 0){
 			page_id = page_id - 1;
-		//alert(page_id);
-		//console.log(page_id);
 		if(page_id == 0){
 			flag=2;
 		}
+		
+		if(page_id == 6){
+			page_id = page_id - 4;
+		}
+		
+		if(page_id == 13){
+			page_id = page_id - 3;
+		}
+		
 	}
 	if(flag == 2){
         localStorage.setItem("gotoNextPrevBrand" ,2);//if one than next if 2 than prev
@@ -281,9 +288,18 @@ else {
 	//custom slide changes ends here....
 
 	else {
-		if(page_id <= 13){
+		
+		if(page_id >= 0){
 			page_id = page_id + 1;
-		//alert(page_id);
+		}
+		
+		if(page_id == 3){
+			page_id = page_id + 4;
+		}
+		
+		if(page_id == 11){
+			page_id = page_id + 3;
+			
 		if(page_id == 14){
 			flag=1;
 		}
@@ -366,7 +382,7 @@ function set_pg_content(pg_id){
 		content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1366" height="1024" alt=""/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_4"><img id="s1_4" src="slide1/s1_4.png"/></div><div class="s1_4_1"><img src="slide1/s1_4_1.png"/></div><div class="s1_5"><img id="s1_5" src="slide1/s1_5.png"/></div><div class="s1_6"><img id="s1_6" src="slide1/s1_6.png"/></div><div class="s1_7"><img id="s1_7" src="slide1/s1_7.png"/></div><div class="s1_8"><img id="s1_8" src="slide1/s1_8.png"/></div><div class="s1_9"><img id="s1_9" src="slide1/s1_9.png"/></div><div class="s1_10"><img id="s1_10" src="slide1/s1_10.png"/></div>';
 		break;
 		case 2:
-		content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1366" height="1024" alt=""/></div><div class="s2_1_1"><img src="slide2/s2_1_1.png"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_3"><img src="slide2/s2_3.png"/></div><div class="s2_3_1"><img src="slide2/s2_3_1.png"/></div><div class="s2_4"><img src="slide2/s2_4.png"/></div><div class="s2_5"><img src="slide2/s2_5.png"/></div><div class="s2_6"><img src="slide2/s2_6.png"/></div><div class="s2_7"><img id="s2_7" src="slide2/s2_7.png"/></div><div class="s2_8"><img id="s2_8" src="slide2/s2_8.png"/></div><div class="s2_9"><img id="s2_9" src="slide2/s2_9.png"/></div><div class="s2_10"><img id="s2_10" src="slide2/s2_10.png"/></div><div class="s2_11"><img id="s2_11" src="slide2/s2_11.png"/></div><div class="s2_12"><img id="s2_12" src="slide2/s2_12.png"/></div><div class="s2_13"><img id="s2_13" src="slide2/s2_13.png"/></div><div class="s2_14"><img id="s2_14" src="slide2/s2_14.png"/></div><div class="pop_up"><img src="slide2/s3_1.png" width="1366" height="1024" alt=""></div><div class="pop1" onclick="pop1()"></div><div class="c1ose1" onclick="close1()"></div>';
+		content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1366" height="1024" alt=""/></div><div class="s2_1_1"><img src="slide2/s2_1_1.png"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_3"><img src="slide2/s2_3.png"/></div><div class="s2_3_1"><img src="slide2/s2_3_1.png"/></div><div class="s2_4"><img src="slide2/s2_4.png"/></div><div class="s2_5"><img src="slide2/s2_5.png"/></div><div class="s2_6"><img src="slide2/s2_6.png"/></div><div class="s2_7"><img id="s2_7" src="slide2/s2_7.png"/></div><div class="s2_8"><img id="s2_8" src="slide2/s2_8.png"/></div><div class="s2_9"><img id="s2_9" src="slide2/s2_9.png"/></div><div class="s2_10"><img id="s2_10" src="slide2/s2_10.png"/></div><div class="s2_11"><img id="s2_11" src="slide2/s2_11.png"/></div><div class="s2_12"><img id="s2_12" src="slide2/s2_12.png"/></div><div class="s2_13"><img id="s2_13" src="slide2/s2_13.png"/></div><div class="s2_14"><img id="s2_14" src="slide2/s2_14.png"/></div>';
 		break;
 		case 3:
 		content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png" width="1366" height="1024" alt=""/></div>';
@@ -470,31 +486,31 @@ function checkClickThrough(){
 		document.getElementById("click_through").innerHTML='';
 	}
 	if(currentslide == 2){
-		document.getElementById("click_through").innerHTML='';
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:695px; top:405px; z-index:105; width:253px; height:235px;" value="OK" onclick="checkBtns(1)"></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:977px; top:405px; z-index:105; width:253px; height:235px;" value="OK" onclick="checkBtns(2)"></button><button name="button" style="opacity: 0.0;position:absolute; left:695px; top:702px; z-index:105; width:253px; height:235px;" value="OK" onclick="checkBtns(3)"></button><button name="button" style="opacity: 0.0;position:absolute; left:977px; top:702px; z-index:105; width:253px; height:235px;" value="OK" onclick="checkBtns(4)"></button>';
 	}
 	if(currentslide == 3){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:200px; height:150px;" value="OK" onclick="checkBtns(5)"></button>';
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1000; width:1366px; height:1024px;" value="OK" onclick=""></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1005; width:200px; height:150px;" value="OK" onclick="checkBtns(5)"></button>';
 	}
 	if(currentslide == 4){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:200px; height:150px;" value="OK" onclick="checkBtns(6)"></button>';
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1000; width:1366px; height:1024px;" value="OK" onclick=""></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1005; width:200px; height:150px;" value="OK" onclick="checkBtns(6)"></button>';
 	}
 	if(currentslide == 5){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:200px; height:150px;" value="OK" onclick="checkBtns(7)"></button>';
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1000; width:1366px; height:1024px;" value="OK" onclick=""></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1005; width:200px; height:150px;" value="OK" onclick="checkBtns(7)"></button>';
 	}
 	if(currentslide == 6){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:200px; height:150px;" value="OK" onclick="checkBtns(8)"></button>';
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1000; width:1366px; height:1024px;" value="OK" onclick=""></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1005; width:200px; height:150px;" value="OK" onclick="checkBtns(8)"></button>';
 	}
 	if(currentslide == 10){
 		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:375px; top:630px; z-index:105; width:100px; height:100px;" value="OK" onclick="checkBtns(9)"></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:728px; top:670px; z-index:105; width:100px; height:100px;" value="OK" onclick="checkBtns(10)"></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; left:1074px; top:620px; z-index:105; width:100px; height:100px;" value="OK" onclick="checkBtns(11)"></button>';
 	}
 	if(currentslide == 11){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:200px; height:150px;" value="OK" onclick="checkBtns(12)"></button>';
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1000; width:1366px; height:1024px;" value="OK" onclick=""></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1005; width:200px; height:150px;" value="OK" onclick="checkBtns(12)"></button>';
 	}
 	if(currentslide == 12){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:150px; height:150px;" value="OK" onclick="checkBtns(13)"></button>';
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1000; width:1366px; height:1024px;" value="OK" onclick=""></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1005; width:150px; height:150px;" value="OK" onclick="checkBtns(13)"></button>';
 	}
 	if(currentslide == 13){
-		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:105; width:150px; height:150px;" value="OK" onclick="checkBtns(14)"></button>';
+		document.getElementById("click_through").innerHTML='<div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1000; width:1366px; height:1024px;" value="OK" onclick=""></button><div id="buttons"><button name="button" style="opacity: 0.0;position:absolute; right:0px; bottom:0px; z-index:1005; width:150px; height:150px;" value="OK" onclick="checkBtns(14)"></button>';
 	}
 }
 
@@ -607,16 +623,16 @@ $('.touchbtn').css("display","block");
 
 /*--------------------- animation javascript -----------------------*/
 
-function pop1() {
-	$('.pop_up').css("display","block");
-	$('.pop1').css("display","none");
-	$('.c1ose1').css("display","block");
+function s4_pop1() {
+	$('.s4_5').css("display","block");
+	$('.s4_c1ose1').css("display","block");
+	$('.s4_pop1').css("display","none");
 }
 
-function close1() {
-	$('.pop_up').css("display","none");
-	$('.pop1').css("display","block");
-	$('.c1ose1').css("display","none");
+function s4_close1() {
+	$('.s4_5').css("display","none");
+	$('.s4_c1ose1').css("display","none");
+	$('.s4_pop1').css("display","block");
 }
 
 /*---------------------Particlize-----------------------*/
