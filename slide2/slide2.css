@@ -239,6 +239,14 @@
   z-index: 2;
 }
 
+.s2_15 {
+  position: absolute;
+  width: 1366px;
+  height: 1024px;
+  display: none;
+  z-index: 15  !important;
+}
+
 
 @-webkit-keyframes stampIn {
 	0% {

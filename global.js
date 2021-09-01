@@ -382,7 +382,7 @@ function set_pg_content(pg_id){
 		content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1366" height="1024" alt=""/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_4"><img id="s1_4" src="slide1/s1_4.png"/></div><div class="s1_4_1"><img src="slide1/s1_4_1.png"/></div><div class="s1_5"><img id="s1_5" src="slide1/s1_5.png"/></div><div class="s1_6"><img id="s1_6" src="slide1/s1_6.png"/></div><div class="s1_7"><img id="s1_7" src="slide1/s1_7.png"/></div><div class="s1_8"><img id="s1_8" src="slide1/s1_8.png"/></div><div class="s1_9"><img id="s1_9" src="slide1/s1_9.png"/></div><div class="s1_10"><img id="s1_10" src="slide1/s1_10.png"/></div>';
 		break;
 		case 2:
-		content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1366" height="1024" alt=""/></div><div class="s2_1_1"><img src="slide2/s2_1_1.png"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_3"><img src="slide2/s2_3.png"/></div><div class="s2_3_1"><img src="slide2/s2_3_1.png"/></div><div class="s2_4"><img src="slide2/s2_4.png"/></div><div class="s2_5"><img src="slide2/s2_5.png"/></div><div class="s2_6"><img src="slide2/s2_6.png"/></div><div class="s2_7"><img id="s2_7" src="slide2/s2_7.png"/></div><div class="s2_8"><img id="s2_8" src="slide2/s2_8.png"/></div><div class="s2_9"><img id="s2_9" src="slide2/s2_9.png"/></div><div class="s2_10"><img id="s2_10" src="slide2/s2_10.png"/></div><div class="s2_11"><img id="s2_11" src="slide2/s2_11.png"/></div><div class="s2_12"><img id="s2_12" src="slide2/s2_12.png"/></div><div class="s2_13"><img id="s2_13" src="slide2/s2_13.png"/></div><div class="s2_14"><img id="s2_14" src="slide2/s2_14.png"/></div>';
+		content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1366" height="1024" alt=""/></div><div class="s2_1_1"><img src="slide2/s2_1_1.png"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_3"><img src="slide2/s2_3.png"/></div><div class="s2_3_1"><img src="slide2/s2_3_1.png"/></div><div class="s2_4"><img src="slide2/s2_4.png"/></div><div class="s2_5"><img src="slide2/s2_5.png"/></div><div class="s2_6"><img src="slide2/s2_6.png"/></div><div class="s2_7"><img id="s2_7" src="slide2/s2_7.png"/></div><div class="s2_8"><img id="s2_8" src="slide2/s2_8.png"/></div><div class="s2_9"><img id="s2_9" src="slide2/s2_9.png"/></div><div class="s2_10"><img id="s2_10" src="slide2/s2_10.png"/></div><div class="s2_11"><img id="s2_11" src="slide2/s2_11.png"/></div><div class="s2_12"><img id="s2_12" src="slide2/s2_12.png"/></div><div class="s2_13"><img id="s2_13" src="slide2/s2_13.png"/></div><div class="s2_14"><img id="s2_14" src="slide2/s2_14.png"/></div><div class="s2_15"><img id="s2_15" src="slide2/s2_15.png"/></div>';
 		break;
 		case 3:
 		content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png" width="1366" height="1024" alt=""/></div>';
@@ -530,15 +530,19 @@ function checkBtns(refNum){
 		break;
 		case 5:
 		open_page('',2);
+		$('.s2_15').css("display","block");
 		break;
 		case 6:
 		open_page('',2);
+		$('.s2_15').css("display","block");
 		break;
 		case 7:
 		open_page('',2);
+		$('.s2_15').css("display","block");
 		break;
 		case 8:
 		open_page('',2);
+		$('.s2_15').css("display","block");
 		break;
 		case 9:
 		open_page('',12);
